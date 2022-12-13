@@ -17,6 +17,28 @@ body {
   font: 14px "Raleway", sans-serif;
 }
 
+.component {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: flex;
+}
+
+@media screen and (max-width: 768px){
+    .component {
+        flex-direction: column;
+    }
+}
+/* Start header */
+
+/* End header */
+
+/* Start footer */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -24,3 +46,4 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+/* End footer */
