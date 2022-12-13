@@ -15,24 +15,33 @@
 
 body {
   font: 14px "Raleway", sans-serif;
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 calc(100vh - 420px);
+  background-color: var(--color-very-dark-blue);
 }
 
 .component {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    display: flex;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: flex;
 }
 
-@media screen and (max-width: 768px){
-    .component {
-        flex-direction: column;
-    }
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    background-position: left top;
+  }
+  .component {
+    flex-direction: column;
+  }
 }
 /* Start header */
 
