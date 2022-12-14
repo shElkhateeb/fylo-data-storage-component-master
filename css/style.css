@@ -12,6 +12,7 @@
   --color-dark-blue: hsl(228, 56%, 26%);
   --color-very-dark-blue: hsl(229, 57%, 11%);
   --padding: 30px;
+  --width-header: 320px;
 }
 
 body {
@@ -32,6 +33,8 @@ body {
   -o-transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
 }
 
 @media screen and (max-width: 768px) {
@@ -42,15 +45,9 @@ body {
   }
 }
 
-@media screen and (max-width: 340px) {
-  .component {
-    width: 80%;
-  }
-}
 /* Start header */
 header {
-  width: 320px;
-  max-width: 100%;
+  width: var(--width-header, 320px);
   height: 200px;
   background-color: var(--color-dark-blue);
   display: flex;
@@ -99,7 +96,23 @@ header .icons .box img {
   width: 100%;
 }
 /* End header */
+/* Start main */
+main {
+  width: calc(var(--width-header) * 2);
+  border: solid 2px white;
+}
 
+main label {
+  color: var(--color-pale-blue);
+}
+
+main input {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+/* End main */
 /* Start footer */
 .attribution {
   font-size: 11px;
