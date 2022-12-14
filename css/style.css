@@ -98,20 +98,39 @@ header .icons .box img {
 /* End header */
 /* Start main */
 main {
-  width: calc(var(--width-header) * 2);
+  width: calc(var(--width-header) * 1.5);
   border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: var(--padding);
+  align-self: flex-end;
+  position: relative;
 }
 
 main label {
   color: var(--color-pale-blue);
 }
 
+main .remainder {
+  position: absolute;
+  background-color: var(--color-pale-blue);
+  top: var(--padding);
+  right: var(--padding);
+}
+
 main input {
   display: block;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
+main .scale {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 /* End main */
 /* Start footer */
 .attribution {
