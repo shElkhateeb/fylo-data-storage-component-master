@@ -113,23 +113,38 @@ main label {
   color: var(--color-pale-blue);
 }
 
-main .remainder {
-  position: absolute;
-  background-color: var(--color-pale-blue);
-  top: var(--padding);
-  right: var(--padding);
-}
-
-main input {
-  display: block;
-  width: 100%;
-  margin: auto;
-}
-
 main .scale {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+/* Start remainder */
+main .remainder {
+  --width: 160px;
+  --height: 60px;
+  width: var(--width);
+  max-width: 100%;
+  height: var(--height);
+  position: absolute;
+  left: calc(50% - var(--width) / 2);
+  bottom: calc(-0.5* var(--height));
+  background-color: var(--color-pale-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1075px) {
+  main .remainder {
+    left: calc(100% - var(--padding) - var(--width));
+    bottom: calc(100% - var(--padding));
+  }
+}
+/* End remainder */
+main input {
+  display: block;
+  width: 100%;
+  margin: auto;
 }
 /* End main */
 /* Start footer */
