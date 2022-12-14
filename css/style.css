@@ -99,7 +99,6 @@ header .icons .box img {
 /* Start main */
 main {
   width: calc(var(--width-header) * 1.5);
-  border: solid 2px white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,6 +106,12 @@ main {
   padding: var(--padding);
   align-self: flex-end;
   position: relative;
+  background-color: var(--color-dark-blue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 main label {
