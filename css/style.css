@@ -34,6 +34,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-end;
   width: 80%;
 }
 
@@ -103,8 +104,8 @@ header .icons .box img {
 /* Start main */
 main {
   width: calc(var(--width-header) * 1.5);
+  height: 150px;
   justify-content: space-between;
-  align-self: flex-end;
   position: relative;
 }
 
