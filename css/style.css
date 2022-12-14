@@ -128,16 +128,39 @@ main .remainder {
   position: absolute;
   left: calc(50% - var(--width) / 2);
   bottom: calc(-0.5* var(--height));
-  background-color: var(--color-pale-blue);
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  color: var(--color-grayish-blue);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.remainder strong {
+  font-size: 36px;
+  color: var(--color-very-dark-blue);
 }
 
 @media screen and (min-width: 1075px) {
   main .remainder {
     left: calc(100% - var(--padding) - var(--width));
     bottom: calc(100% - var(--padding));
+  }
+
+  .remainder::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid 25px white;
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    border-color: transparent white transparent transparent;
   }
 }
 /* End remainder */
