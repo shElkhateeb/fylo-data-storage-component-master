@@ -101,12 +101,17 @@ header .icons .box img {
   width: 100%;
 }
 
-header .icons .box input[type="file"]{
+header .icons .box input[type="file"] {
   display: none;
 }
 
 header .icons label.box {
   cursor: pointer;
+}
+/* Box hover effect */
+.box:hover img {
+  filter: invert(100%) sepia(0%) saturate(7474%) hue-rotate(182deg)
+    brightness(104%) contrast(93%);
 }
 /* End header */
 /* Start main */
