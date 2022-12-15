@@ -22,6 +22,10 @@ body {
   background-color: var(--color-very-dark-blue);
 }
 
+h1 {
+  display: none;
+}
+
 .component {
   position: absolute;
   top: 50vh;
