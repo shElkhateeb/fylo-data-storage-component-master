@@ -177,7 +177,7 @@ progress {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
-  border: solid 2px var(--color-very-dark-blue);
+  border: solid 3px var(--color-very-dark-blue);
 }
 /* webkit */
 progress::-webkit-progress-bar {
