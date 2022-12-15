@@ -100,6 +100,10 @@ header .icons .box {
 header .icons .box img {
   width: 100%;
 }
+
+header .icons .box input[type="file"]{
+  display: none;
+}
 /* End header */
 /* Start main */
 main {
