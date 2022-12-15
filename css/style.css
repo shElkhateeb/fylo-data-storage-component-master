@@ -13,6 +13,7 @@
   --color-very-dark-blue: hsl(229, 57%, 11%);
   --padding: 30px;
   --width-header: 320px;
+  --transition: 0.1s;
 }
 
 body {
@@ -103,6 +104,11 @@ header .icons .box {
 
 header .icons .box img {
   width: 100%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 
 header .icons .box input[type="file"] {
@@ -217,6 +223,13 @@ progress::-webkit-progress-value {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 }
+progress:hover::-webkit-progress-value {
+  background: linear-gradient(
+    to left,
+    var(--color-gradient-from),
+    var(--color-gradient-to)
+  );
+}
 /* firefox */
 progress::-moz-progress-bar {
   background: linear-gradient(
@@ -226,6 +239,13 @@ progress::-moz-progress-bar {
   );
   border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
+}
+progress:hover::-moz-progress-bar {
+  background: linear-gradient(
+    to left,
+    var(--color-gradient-from),
+    var(--color-gradient-to)
+  );
 }
 /* thumb */
 .thumb {
