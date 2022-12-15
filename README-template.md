@@ -91,7 +91,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [Making Responsive Images With CSS Properties](https://www.bitdegree.org/learn/responsive-image#setting-background-size-to-fit-screen) - This helped me for setting the back ground image.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Creating A Custom Range Input That Looks Consistent Across All Browsers](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/) - This is an amazing article which helped me finally understand how to customize range input and progress bar. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

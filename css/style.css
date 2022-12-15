@@ -128,7 +128,7 @@ main .remainder {
   height: var(--height);
   position: absolute;
   left: calc(50% - var(--width) / 2);
-  bottom: calc(-0.5* var(--height));
+  bottom: calc(-0.5 * var(--height));
   background-color: white;
   display: flex;
   justify-content: center;
@@ -165,11 +165,49 @@ main .remainder {
   }
 }
 /* End remainder */
-main input {
-  display: block;
+/* Start progress */
+progress {
+  appearance: none;
+  background: var(--color-very-dark-blue);
   width: 100%;
-  margin: auto;
+  height: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
 }
+/* webkit */
+progress::-webkit-progress-bar {
+  background: var(--color-very-dark-blue);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+progress::-webkit-progress-value {
+  background: linear-gradient(
+    to right,
+    var(--color-gradient-from),
+    var(--color-gradient-to)
+  );
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+/* firefox */
+progress::-moz-progress-bar {
+  background: linear-gradient(
+    to right,
+    var(--color-gradient-from),
+    var(--color-gradient-to)
+  );
+  border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+}
+/* End progress */
 /* End main */
 /* Start footer */
 .attribution {
