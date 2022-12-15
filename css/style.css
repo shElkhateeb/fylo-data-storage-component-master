@@ -73,8 +73,8 @@ header {
   -o-border-top-right-radius: 50%;
 }
 
-header > img {
-  width: 45%;
+header .logo {
+  width: 90%;
 }
 
 header .icons {
@@ -103,6 +103,10 @@ header .icons .box img {
 
 header .icons .box input[type="file"]{
   display: none;
+}
+
+header .icons label.box {
+  cursor: pointer;
 }
 /* End header */
 /* Start main */
