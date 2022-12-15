@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Fylo data storage component](./screenshot.jpg)
+![Fylo data storage component](./Screenshot.png)
 
 ### Links
 
