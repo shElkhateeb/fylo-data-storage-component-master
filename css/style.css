@@ -198,7 +198,6 @@ progress {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border: solid 2px var(--color-very-dark-blue);
-  position: relative;
 }
 /* webkit */
 progress::-webkit-progress-bar {
@@ -248,15 +247,27 @@ progress:hover::-moz-progress-bar {
   width: 0.6rem;
   height: 0.6rem;
   background-color: white;
-  position: relative;
-  top: -31px;
-  left: calc(0.815 * 100% - 0.7rem);
+  position: absolute;
+  top: calc(50% + 0.3rem);
+  left: calc(0.815 * 100% - var(--padding));
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border: solid 1px var(--color-gradient-to);
+}
+
+@media screen and (max-width: 396px) {
+  .thumb {
+    top: calc(50% + 0.8rem);
+  }
+}
+
+@media screen and (max-width: 262px) {
+  .thumb {
+    top: calc(50% + 1.3rem);
+  }
 }
 /* End progress */
 /* End main */
