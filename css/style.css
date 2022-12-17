@@ -39,7 +39,7 @@ body {
   width: 80%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1074px) {
   body {
     background: url(../images/bg-mobile.png) no-repeat;
     background-size: 100vw 100vh;
